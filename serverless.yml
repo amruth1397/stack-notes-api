@@ -4,11 +4,13 @@ service: notes-app-api
 package:
   individually: true
 
+# Plugins that are added.
 plugins:
   - serverless-bundle # Package our functions with Webpack
   - serverless-offline
   - serverless-dotenv-plugin # Load .env as environment variables
 
+#Provider Environment.
 provider:
   name: aws
   runtime: nodejs10.x
